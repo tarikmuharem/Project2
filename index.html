@@ -23,7 +23,7 @@
 			<ul class="content">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="#about-us">About us</a></li>
-				<li>Services</li>
+				<li><a href="PHP/index.php">Services</a></li>
 				<li><a href="#gallery">Gallery</a></li>
 				<li><a href="#contact-info">Contact us</a></li>
 			</ul>
@@ -61,11 +61,11 @@
 	</div>
 	<footer class="footer">
 		<div class="contact-info" id="contact-info">
-			<form class="form">
+			<form class="form" action="PHP/form.php" method="post">
 				<input class="name" type="text" name="Name" placeholder="Bob"><br>
 				<input class="surname" type="text" name="Surname" placeholder="Bobović"><br>
 				<input class="e-mail" type="text" name="E-mail" placeholder="bob_bobović@gmail.com"><br>
-				<textarea class="question" rows="10" placeholder="I would like to..."></textarea><br>
+				<textarea class="question" rows="10" placeholder="I would like to..." name="Question"></textarea><br>
 				<input class="button" type="submit" name="submit" value="Send">
 			</form>
 		</div>
